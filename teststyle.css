@@ -1,0 +1,242 @@
+
+
+.recipeName {
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  padding: 0.1em 0.5em;
+  background: -moz-linear-gradient(to right, rgb(255, 186, 115), transparent);
+  background: -webkit-linear-gradient(to right, rgb(255, 186, 115), transparent);
+  background: linear-gradient(to right, rgb(255, 186, 115), transparent);
+  color: #545454;
+}
+
+.recipeName2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.recipeRow {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+/* 余白 */
+.m60-t { margin-top: 60px; } /*上に60余白 */
+.m120-t { margin-top: 120px; } /*上に120余白 */
+.m300-t { margin-top: 300px; } /*上に300余白 */
+.m600-t { margin-top: 600px; } /*上に600余白 */
+.m60-b { margin-bottom: 60px; } /*下に60余白 */
+.m120-b { margin-bottom : 120px; } /*下に120余白 */
+.m300-b { margin-bottom : 300px; } /*下に300余白 */
+.m600-b { margin-bottom : 600px; } /*下に600余白 */
+
+/* h1 */
+
+.box15 {
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+}
+.box15 h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.ribbon6 {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 1em;
+    background: pink;
+    color: #FFF;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ribbon6 h1 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 2px rgba(255, 255, 255, 0.5);
+    border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+    line-height: 42px;
+}
+
+.ribbon6:before, .ribbon6:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.ribbon6:before{
+    top: -2px;
+    left: -2px;
+    border-width: 32px 0px 32px 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+}
+
+.ribbon6:after{
+    top: -2px;
+    right: -2px;
+    border-width: 32px 15px 32px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+
+
+/* ボタン */
+.btn31{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #f56b75;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    background-image: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.btn31:active{/*押したとき*/
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);/*沈むように*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    background-image: -webkit-linear-gradient(#fed6e3 0%, #ffbcbc 100%);
+    background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
+}
+
+.btn32{
+    display: inline-block;
+    text-decoration: none;
+    background: #ff8181;
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #bd6565;
+    transition: .4s;
+}
+
+.btn32:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+}
+
+/*
+.menuName{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+table {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th,
+table td {
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 10px;
+}
+table th {
+  background-color: #eee;
+  text-align: left;
+}
+
+@media screen and (max-width: 320px) {
+  table {
+    border: none;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-top: 1px solid #999;
+    display: block;
+    margin-bottom: 20px;
+  }
+  table td {
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    display: block;
+    padding: 10px;
+    text-align: right;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
+
+
+.cp_table *, .cp_table *:before, .cp_table *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cp_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.cp_table th, .cp_table  td {
+	padding: 10px;
+	border: 1px solid #dddddd;
+}
+.cp_table th {
+	width: 30%;
+	text-align: left;
+	background: #f4f4f4;
+}
+@media only screen and (max-width:480px) {
+	.cp_table {
+		margin: 0;
+	}
+	.cp_table th, .cp_table td {
+		width: 100%;
+		display: block;
+		border-top: none;
+	}
+	.cp_table tr:first-child th {
+		border-top: 1px solid #dddddd;
+	}
+} */
